@@ -1,0 +1,39 @@
+package com.fatec.ads;
+
+public class Exame {
+
+    private String tipo;
+    private String resultado;
+
+    public Exame(){
+        this.tipo = "";
+        this.resultado = "";
+    }
+
+    public Exame(String tipo, String resultado){
+        setTipo(tipo);
+        setResultado(resultado);
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public String getResultado() {
+        return resultado;
+    }
+
+    public void setResultado(String resultado) {
+        this.resultado = resultado;
+    }
+
+    public void mostrar(){
+        System.out.println(">>>> Exame <<<<");
+        System.out.println("Tipo: " + getTipo());
+        System.out.println("Resultado: " + getResultado());
+    }
+}
