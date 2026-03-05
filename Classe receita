@@ -1,0 +1,27 @@
+package com.fatec.ads;
+
+public class Receita {
+
+    private String descricao;
+
+    public Receita(){
+        this.descricao = "";
+    }
+
+    public Receita(String descricao){
+        setDescricao(descricao);
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public void mostrar(){
+        System.out.println(">>>> Receita <<<<");
+        System.out.println("Descricao: " + getDescricao());
+    }
+}
